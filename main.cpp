@@ -123,7 +123,3 @@ void ExecuteMenu(char option, ShoppingCart& theCart) {
             break;
     }
 }
-
-
-
-
