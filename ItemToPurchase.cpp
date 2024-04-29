@@ -1,9 +1,10 @@
+
 #include "ItemToPurchase.h"
 #include <iostream>
 using namespace std;
 ItemToPurchase::ItemToPurchase() : itemName("none"), itemDescription("none"), itemPrice(0), itemQuantity(0) {}
 
-ItemToPurchase::ItemToPurchase(string name, string description, int price, int quantity)
+ItemToPurchase::ItemToPurchase(string name, string description, int price, int quantity) 
     : itemName(name), itemDescription(description), itemPrice(price), itemQuantity(quantity) {}
 
 void ItemToPurchase::SetName(string name) {
@@ -45,3 +46,8 @@ void ItemToPurchase::PrintItemCost() const {
 void ItemToPurchase::PrintItemDescription() const {
     cout << itemName << ": " << itemDescription << endl;
 }
+
+
+
+
+
