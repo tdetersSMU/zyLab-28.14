@@ -21,3 +21,27 @@ void ItemToPurchase::SetPrice(int price) {
 void ItemToPurchase::SetQuantity(int quantity) {
     itemQuantity = quantity;
 }
+
+string ItemToPurchase::GetName() const {
+    return itemName;
+}
+
+string ItemToPurchase::GetDescription() const {
+    return itemDescription;
+}
+
+int ItemToPurchase::GetPrice() const {
+    return itemPrice;
+}
+
+int ItemToPurchase::GetQuantity() const {
+    return itemQuantity;
+}
+
+void ItemToPurchase::PrintItemCost() const {
+    cout << itemName << " " << itemQuantity << " @ $" << itemPrice << " = $" << (itemPrice * itemQuantity) << endl;
+}
+
+void ItemToPurchase::PrintItemDescription() const {
+    cout << itemName << ": " << itemDescription << endl;
+}
